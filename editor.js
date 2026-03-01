@@ -54,7 +54,7 @@
       --header-h:          var(--editor-header-h,   70px);
       --section-py:        var(--editor-section-py, 6rem);
     }
-    .nav__logo-img { height: var(--editor-logo-h, 56px) !important; }
+    .nav__logo-img { height: var(--editor-logo-h, 112px) !important; }
     h1, .hero__title { font-size: var(--editor-fs-h1, 3.25rem) !important; }
     h2, .section__title { font-size: var(--editor-fs-h2, 2.5rem) !important; }
     h3, .service-card__title, .why-card__title { font-size: var(--editor-fs-h3, 1.25rem) !important; }
