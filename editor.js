@@ -24,8 +24,8 @@
     {
       group: 'Logo & navigace',
       items: [
-        { label: 'Velikost loga',           prop: '--editor-logo-h',    unit: 'px',  min: 30, max: 120, step: 2,   default: 56 },
-        { label: 'Výška navigace',          prop: '--editor-header-h',  unit: 'px',  min: 50, max: 140, step: 2,   default: 70 },
+        { label: 'Velikost loga',           prop: '--editor-logo-h',    unit: 'px',  min: 30, max: 200, step: 2,   default: 112 },
+        { label: 'Výška navigace',          prop: '--editor-header-h',  unit: 'px',  min: 50, max: 160, step: 2,   default: 120 },
       ]
     },
     {
