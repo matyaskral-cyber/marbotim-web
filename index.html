@@ -175,7 +175,9 @@
 
         <div class="services__grid">
 
-          <article class="service-card" data-animate="fade-up" data-delay="0">
+          <article class="service-card" data-animate="fade-up" data-delay="0"
+            data-img="images/Foto_04.jpg"
+            data-detail="Podlahové a stěnové vytápění zajišťuje rovnoměrné prohřátí celé místnosti bez viditelných těles. Je ideální pro novostavby i rekonstrukce — instalujeme vodní i elektrické systémy. Stěnové vytápění využívá tepelnou kapacitu zdiva, výsledkem je příjemné a zdravé klima v interiéru s minimálními provozními náklady.">
             <div class="service-card__icon-wrap" aria-hidden="true">
               <svg class="service-card__icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="48" height="48" rx="14" fill="#c0392b" fill-opacity="0.12"/>
@@ -193,7 +195,9 @@
             </span>
           </article>
 
-          <article class="service-card" data-animate="fade-up" data-delay="80">
+          <article class="service-card" data-animate="fade-up" data-delay="80"
+            data-img="images/Foto_02.jpg"
+            data-detail="Etážové a ústřední topení tvoří základ vytápění většiny bytů a rodinných domů. Provádíme kompletní rozvody měděného nebo plastového potrubí, montáž radiátorů, konvektorů i regulačních prvků. Realizujeme nové instalace i modernizace stávajících systémů — od bytu po velký bytový dům.">
             <div class="service-card__icon-wrap" aria-hidden="true">
               <svg class="service-card__icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="48" height="48" rx="14" fill="#c0392b" fill-opacity="0.12"/>
@@ -216,7 +220,9 @@
             </span>
           </article>
 
-          <article class="service-card" data-animate="fade-up" data-delay="160">
+          <article class="service-card" data-animate="fade-up" data-delay="160"
+            data-img="images/Foto_03.jpg"
+            data-detail="Plynové kotle jsou nejrozšířenějším zdrojem tepla v bytových i rodinných domech. Instalujeme závěsné i stacionární kondenzační kotle od předních výrobců. Součástí každé instalace je uvedení do provozu, zaškolení obsluhy a nastavení regulace. Nabízíme také pravidelný servis a havarijní opravy.">
             <div class="service-card__icon-wrap" aria-hidden="true">
               <svg class="service-card__icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="48" height="48" rx="14" fill="#c0392b" fill-opacity="0.12"/>
@@ -241,7 +247,9 @@
             </span>
           </article>
 
-          <article class="service-card" data-animate="fade-up" data-delay="0">
+          <article class="service-card" data-animate="fade-up" data-delay="0"
+            data-img="images/Foto_10.jpg"
+            data-detail="Tepelná čerpadla jsou moderní a ekologické řešení vytápění s velmi nízkými provozními náklady. Pracují na principu přenosu tepla ze vzduchu, země nebo vody. Instalujeme systémy vzduch–voda i země–voda vhodné pro novostavby i rekonstrukce. Investice se zpravidla vrátí do několika let díky úsporám na energiích.">
             <div class="service-card__icon-wrap" aria-hidden="true">
               <svg class="service-card__icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="48" height="48" rx="14" fill="#1565c0" fill-opacity="0.12"/>
@@ -270,7 +278,9 @@
             </span>
           </article>
 
-          <article class="service-card" data-animate="fade-up" data-delay="80">
+          <article class="service-card" data-animate="fade-up" data-delay="80"
+            data-img="images/Foto_07.jpg"
+            data-detail="Rekonstrukce kotelen zajišťujeme v bytových domech, školách, průmyslových objektech i vilách. Zahrnuje výměnu zastaralých zdrojů tepla za moderní kondenzační kotle, nové rozvody, armatury, expanzní nádoby i řídící systémy. Výsledkem je výrazné snížení spotřeby energie a splnění aktuálních emisních norem.">
             <div class="service-card__icon-wrap" aria-hidden="true">
               <svg class="service-card__icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="48" height="48" rx="14" fill="#c0392b" fill-opacity="0.12"/>
@@ -296,7 +306,9 @@
             </span>
           </article>
 
-          <article class="service-card" data-animate="fade-up" data-delay="160">
+          <article class="service-card" data-animate="fade-up" data-delay="160"
+            data-img="images/Foto_06.jpg"
+            data-detail="Automatické kotle na tuhá paliva jsou vhodnou alternativou tam, kde není dostupný plyn. Instalujeme kotle na uhlí, pelety, dřevní štěpku i brikety s automatickým podavačem paliva. Tyto kotle dosahují vysoké účinnosti a lze je snadno kombinovat s jiným zdrojem tepla nebo akumulační nádobou.">
             <div class="service-card__icon-wrap" aria-hidden="true">
               <svg class="service-card__icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="48" height="48" rx="14" fill="#c0392b" fill-opacity="0.12"/>
@@ -704,7 +716,64 @@
     </svg>
   </button>
 
+  <!-- Service detail modal -->
+  <div id="serviceModal" class="svc-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="svc-modal__backdrop"></div>
+    <div class="svc-modal__box">
+      <button class="svc-modal__close" aria-label="Zavřít">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="svc-modal__img-wrap">
+        <img id="svcModalImg" src="" alt="" loading="lazy" />
+      </div>
+      <div class="svc-modal__body">
+        <h3 id="svcModalTitle" class="svc-modal__title"></h3>
+        <p id="svcModalDesc" class="svc-modal__desc"></p>
+        <a href="#contact" class="btn btn--primary svc-modal__cta">Nezávazná poptávka</a>
+      </div>
+    </div>
+  </div>
+
   <script src="script.js"></script>
   <script src="editor.js"></script>
+  <script>
+    // Service card modal
+    (function () {
+      const modal = document.getElementById('serviceModal');
+      const backdrop = modal.querySelector('.svc-modal__backdrop');
+      const closeBtn = modal.querySelector('.svc-modal__close');
+      const img = document.getElementById('svcModalImg');
+      const title = document.getElementById('svcModalTitle');
+      const desc = document.getElementById('svcModalDesc');
+
+      function open(card) {
+        img.src = card.dataset.img || '';
+        img.alt = card.querySelector('h3').textContent;
+        title.textContent = card.querySelector('h3').textContent;
+        desc.textContent = card.dataset.detail || '';
+        modal.setAttribute('aria-hidden', 'false');
+        modal.classList.add('svc-modal--open');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function close() {
+        modal.classList.remove('svc-modal--open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        setTimeout(() => { img.src = ''; }, 300);
+      }
+
+      document.querySelectorAll('.service-card[data-img]').forEach(card => {
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', () => open(card));
+      });
+
+      closeBtn.addEventListener('click', close);
+      backdrop.addEventListener('click', close);
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+
+      modal.querySelector('.svc-modal__cta').addEventListener('click', close);
+    })();
+  </script>
 </body>
 </html>
