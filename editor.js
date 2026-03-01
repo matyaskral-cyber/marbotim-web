@@ -246,14 +246,18 @@
     document.addEventListener('DOMContentLoaded', openPanel);
   }
 
-  // ── Aplikovat uložené hodnoty při načtení ──────────────────────────────────
+  // ── Aplikovat bridge CSS vždy (propojí proměnné na vlastnosti) ────────────
   const bridgeStyle = document.createElement('style');
   bridgeStyle.textContent = BRIDGE_CSS;
   document.head.appendChild(bridgeStyle);
 
-  const saved = loadValues();
-  if (Object.keys(saved).length > 0) {
-    applyValues(saved);
+  // ── Uložené hodnoty aplikovat POUZE v edit módu (?edit v URL) ─────────────
+  // Normální návštěvníci vždy vidí CSS výchozí hodnoty — žádný flash
+  if (new URLSearchParams(location.search).has('edit')) {
+    const saved = loadValues();
+    if (Object.keys(saved).length > 0) {
+      applyValues(saved);
+    }
   }
 
 })();
