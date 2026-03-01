@@ -1701,43 +1701,50 @@ a.contact__detail-value:hover { color: var(--clr-accent-light); }
    GALLERY
    ============================================================ */
 .gallery__grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 6px;
+  column-count: 4;
+  column-gap: 6px;
   margin-top: var(--space-12);
 }
 
 .gallery__item,
 .gallery__item--wide {
+  break-inside: avoid;
   overflow: hidden;
   border-radius: var(--radius-sm);
-  aspect-ratio: 4/3;
+  margin-bottom: 6px;
   background: var(--clr-border);
-  grid-column: span 1;
 }
 
 .gallery__item img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   display: block;
   transition: transform 0.4s ease;
 }
 
 .gallery__item:hover img {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .gallery__grid {
-    grid-template-columns: repeat(3, 1fr);
+    column-count: 3;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .gallery__grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4px;
+    column-count: 2;
+    column-gap: 4px;
+  }
+  .gallery__item, .gallery__item--wide {
+    margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 380px) {
+  .gallery__grid {
+    column-count: 1;
   }
 }
 
