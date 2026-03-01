@@ -29,6 +29,7 @@
       <ul class="nav__menu" id="nav-menu" role="list">
         <li><a href="#about" class="nav__link">O nás</a></li>
         <li><a href="#services" class="nav__link">Služby</a></li>
+        <li><a href="#gallery" class="nav__link">Realizace</a></li>
         <li><a href="#why-us" class="nav__link">Proč my</a></li>
         <li><a href="#contact" class="nav__link nav__link--cta">Kontakt</a></li>
       </ul>
@@ -104,48 +105,7 @@
           <div class="about__visual" data-animate="fade-right">
             <div class="about__img-wrapper">
               <div class="about__img-block about__img-block--main">
-                <svg viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <!-- House illustration -->
-                  <rect width="320" height="240" fill="#1a1a2e" rx="16"/>
-                  <!-- House body -->
-                  <rect x="80" y="110" width="160" height="110" fill="#252547" rx="4"/>
-                  <!-- Roof -->
-                  <polygon points="60,115 160,45 260,115" fill="#c0392b" opacity="0.9"/>
-                  <polygon points="60,115 160,45 260,115" fill="none" stroke="#c0392b" stroke-width="2"/>
-                  <!-- Door -->
-                  <rect x="145" y="160" width="30" height="60" fill="#c0392b" rx="3" opacity="0.8"/>
-                  <circle cx="170" cy="192" r="3" fill="white"/>
-                  <!-- Windows -->
-                  <rect x="95" y="130" width="40" height="35" fill="#c0392b" rx="4" opacity="0.3"/>
-                  <rect x="185" y="130" width="40" height="35" fill="#c0392b" rx="4" opacity="0.3"/>
-                  <line x1="115" y1="130" x2="115" y2="165" stroke="#c0392b" stroke-width="1.5" opacity="0.5"/>
-                  <line x1="95" y1="147.5" x2="135" y2="147.5" stroke="#c0392b" stroke-width="1.5" opacity="0.5"/>
-                  <line x1="205" y1="130" x2="205" y2="165" stroke="#c0392b" stroke-width="1.5" opacity="0.5"/>
-                  <line x1="185" y1="147.5" x2="225" y2="147.5" stroke="#c0392b" stroke-width="1.5" opacity="0.5"/>
-                  <!-- Chimney smoke -->
-                  <rect x="200" y="65" width="20" height="40" fill="#252547"/>
-                  <ellipse cx="210" cy="63" rx="10" ry="5" fill="#252547"/>
-                  <!-- Animated smoke dots -->
-                  <circle cx="210" cy="50" r="6" fill="#c0392b" opacity="0.4">
-                    <animate attributeName="cy" values="50;30;10" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="opacity" values="0.4;0.2;0" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="r" values="6;9;12" dur="3s" repeatCount="indefinite"/>
-                  </circle>
-                  <circle cx="212" cy="42" r="4" fill="#c0392b" opacity="0.3">
-                    <animate attributeName="cy" values="42;22;2" dur="3s" begin="1s" repeatCount="indefinite"/>
-                    <animate attributeName="opacity" values="0.3;0.15;0" dur="3s" begin="1s" repeatCount="indefinite"/>
-                  </circle>
-                  <!-- Floor heating lines -->
-                  <path d="M85 210 Q120 205 155 210 Q190 215 225 210 Q245 207 235 210" stroke="#c0392b" stroke-width="2" fill="none" opacity="0.3" stroke-dasharray="4,4"/>
-                  <!-- Radiator icon small -->
-                  <g transform="translate(230, 145)" opacity="0.6">
-                    <rect x="0" y="0" width="8" height="28" rx="2" fill="#c0392b"/>
-                    <rect x="10" y="0" width="8" height="28" rx="2" fill="#c0392b"/>
-                    <rect x="20" y="0" width="8" height="28" rx="2" fill="#c0392b"/>
-                    <rect x="-1" y="6" width="30" height="3" rx="1" fill="#1a1a2e" opacity="0.5"/>
-                    <rect x="-1" y="16" width="30" height="3" rx="1" fill="#1a1a2e" opacity="0.5"/>
-                  </g>
-                </svg>
+                <img src="images/Foto_01.jpg" alt="Realizace topení MARBOTIM" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:16px;" />
               </div>
               <div class="about__badge-float">
                 <div class="about__badge-icon" aria-hidden="true">
@@ -368,6 +328,56 @@
             </span>
           </article>
 
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GALLERY ===================== -->
+    <section class="gallery section" id="gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section__header" data-animate="fade-up">
+          <div class="section__tag">Realizace</div>
+          <h2 class="section__title" id="gallery-heading">
+            Naše <span class="text-accent">hotové projekty</span>
+          </h2>
+          <p class="section__subtitle">
+            Ukázka z naší práce — rodinné domy, bytové domy, kotelny i průmyslové objekty.
+          </p>
+        </div>
+        <div class="gallery__grid" data-animate="fade-up">
+          <div class="gallery__item gallery__item--wide">
+            <img src="images/Foto_05.jpg" alt="Realizace topení" loading="lazy" />
+          </div>
+          <div class="gallery__item">
+            <img src="images/Foto_02.jpg" alt="Rozvody topení" loading="lazy" />
+          </div>
+          <div class="gallery__item">
+            <img src="images/Foto_03.jpg" alt="Instalace kotle" loading="lazy" />
+          </div>
+          <div class="gallery__item">
+            <img src="images/Foto_04.jpg" alt="Podlahové vytápění" loading="lazy" />
+          </div>
+          <div class="gallery__item">
+            <img src="images/Foto_06.jpg" alt="Kotelna" loading="lazy" />
+          </div>
+          <div class="gallery__item gallery__item--wide">
+            <img src="images/Foto_07.jpg" alt="Rekonstrukce topení" loading="lazy" />
+          </div>
+          <div class="gallery__item">
+            <img src="images/Foto_08.jpg" alt="Topné těleso" loading="lazy" />
+          </div>
+          <div class="gallery__item">
+            <img src="images/Foto_09.jpg" alt="Radiátor" loading="lazy" />
+          </div>
+          <div class="gallery__item">
+            <img src="images/Foto_10.jpg" alt="Tepelné čerpadlo" loading="lazy" />
+          </div>
+          <div class="gallery__item">
+            <img src="images/Foto_11.jpg" alt="Montáž topení" loading="lazy" />
+          </div>
+          <div class="gallery__item">
+            <img src="images/Foto_12.jpg" alt="Dokončená realizace" loading="lazy" />
+          </div>
         </div>
       </div>
     </section>
